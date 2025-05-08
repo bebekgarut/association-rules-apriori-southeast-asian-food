@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="flex flex-col items-center justify-center min-h-screen p-4 bg-fixed"  style="background-image: url('{{ url_for('static', filename='img/bg.jpg') }}');">
+    <div class="bg-white rounded-3xl shadow-lg p-6 w-3/4 grid-cols-2 grid mb-5">
+      <div class="w-full flex justify-center items-center">
+        <div class="flex justify-center items-center object-contain">
+          <img src="{{ url_for('static', filename='img/sidenobg.png') }}" class="w-full" alt="">
+        </div>
+      </div>
+      <div class="">
+      <p class="text-2xl font-bold mb-6 text-center text-gray-900">Masukkan Bahan & Negara</p>
+      <form method="POST" class="space-y-4">
+        <div>
+          <label for="ingredient1" class="block text-gray-700 font-medium mb-1">Bahan 1</label>
+          <input type="text" name="bahan" placeholder="Masukkan bahan pertama" value="{{ request.form.getlist('bahan')[0] if request.form.getlist('bahan')|length > 0 else '' }}" required class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        </div>
+        <div>
+          <label for="ingredient2" class="block text-gray-700 font-medium mb-1">Bahan 2</label>
+          <input type="text" name="bahan" placeholder="Masukkan bahan kedua" value="{{ request.form.getlist('bahan')[1] if request.form.getlist('bahan')|length > 1 else '' }}" class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        </div>
+        <div>
+          <label for="ingredient3" class="block text-gray-700 font-medium mb-1">Bahan 3</label>
+          <input type="text" name="bahan" placeholder="Masukkan bahan ketiga" value="{{ request.form.getlist('bahan')[2] if request.form.getlist('bahan')|length > 2 else '' }}" class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        </div>
+        <div>
+          <label for="country" class="block text-gray-700 font-medium mb-1">Pilih Negara</label>
+          <select id="country" name="negara" required class="w-full rounded-lg border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <option value="" disabled selected>Pilih negara</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Laos">Laos</option>
+            <option value="Brunei Darussalam">Brunei Darussalam</option>
+            <option value="Kamboja">Kamboja</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-200 hover:to-lime-100 text-white font-semibold rounded-lg px-4 py-2 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300">Tampilkan</button>
+        </form>
+      </div>
+    </div>
+    {% if hasil %}
+    <div id="result" class="bg-white rounded-3xl shadow-lg p-6 w-fit">
+      {% if hasil.error %}
+        <p>{{ hasil.error }}</p>
+      {% else %}
+      <p class="font-semibold text-lg mb-2">Rekomendasi bahan tambahan:</p>
+      <ul class="list-disc list-inside mb-2">
+        {% for bahan in hasil.rekomendasi_bahan %}
+          <li>{{ bahan }}</li>
+        {% endfor %}
+      </ul>
+        <p class="mb-2">Resep: {{ hasil.nama_resep }} ({{ hasil.negara }})</p>
+        <h4 class="font-semibold text-lg mb-1">Bahan lengkap:</h4>
+        <ul class="list-disc list-inside">
+          {% for bahan in hasil.bahan_resep %}
+            <li>{{ bahan }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endif %}
+  </body>
+</html>
