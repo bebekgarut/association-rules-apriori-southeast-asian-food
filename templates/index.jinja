@@ -3,68 +3,340 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet" />
-    <title>Document</title>
+    <title>Sistem Rekomendasi Makanan</title>
+    <link
+      rel="shortcut icon"
+      href=""
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbarmain.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Josefin+Sans:wght@400;500;600;700&family=Montserrat:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="flex flex-col items-center justify-center min-h-screen p-4 bg-fixed"  style="background-image: url('{{ url_for('static', filename='img/bg.jpg') }}');">
-    <div class="bg-white rounded-3xl shadow-lg p-6 w-3/4 grid-cols-2 grid mb-5">
-      <div class="w-full flex justify-center items-center">
-        <div class="flex justify-center items-center object-contain">
-          <img src="{{ url_for('static', filename='img/sidenobg.png') }}" class="w-full" alt="">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#"> Rekomendasi Bahan Makanan </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav align-items-lg-center gap-lg-5 mb-2 mb-lg-0 ms-auto"
+          >
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#deskripsi"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#sistemrekomendasi"
+                >Rekomendasi Makanan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#makanan">Makanan</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="">
-      <p class="text-2xl font-bold mb-6 text-center text-gray-900">Masukkan Bahan & Negara</p>
-      <form method="POST" class="space-y-4">
-        <div>
-          <label for="ingredient1" class="block text-gray-700 font-medium mb-1">Bahan 1</label>
-          <input type="text" name="bahan" placeholder="Masukkan bahan pertama" value="{{ request.form.getlist('bahan')[0] if request.form.getlist('bahan')|length > 0 else '' }}" required class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+    </nav>
+
+    <section id="deskripsi">
+      <div class="card-deskripsi">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="{{ url_for('static', filename='img/makanan/nasi-goreng.png') }}"
+              class="img-fluid rounded-start"
+              alt=""
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1 class="card-title">Sistem Rekomendasi Makanan</h1>
+              <p class="card-text">
+                Sistem rekomendasi ini dirancang untuk membantu pengguna yang
+                memiliki sejumlah bahan masakan tertentu, namun belum tahu bahan
+                tambahan apa yang bisa digunakan untuk melengkapi masakan
+                mereka. Dengan memasukkan bahan-bahan yang mereka miliki ke
+                dalam sistem, pengguna akan mendapatkan rekomendasi bahan-bahan
+                lain yang sering digunakan bersama dengan bahan-bahan tersebut
+                dalam resep-resep masakan Asia Tenggara.<br /><br />
+
+                Implementasi sistem ini menggunakan pendekatan association rule
+                mining dengan algoritma Apriori. Berdasarkan dataset resep
+                kuliner Asia Tenggara, setiap resep dipandang sebagai sebuah
+                transaksi yang berisi kombinasi bahan masakan. Dari data ini,
+                algoritma Apriori mencari pola-pola asosiasi antar bahan yang
+                sering muncul bersama, lalu membentuk aturan rekomendasi
+                seperti: <br><br>
+
+                "Jika pengguna memiliki garlic dan chicken, maka kemungkinan besar bahan seperti onion atau soy sauce juga digunakan." <br>
+                Dalam implementasinya: <br>
+              <ul>
+                <li>Input: Daftar bahan masakan yang dimiliki oleh pengguna.</li>
+                <li>Proses:</li>
+                <ol>
+                  <li>Sistem mencocokkan input dengan aturan asosiasi yang telah dibentuk dari dataset.</li>
+                  <li>Menggunakan metrik seperti support, confidence, dan lift untuk memilih bahan tambahan yang paling relevan.</li>
+                </ol>
+                <li>Output: Rekomendasi bahan-bahan lain yang sering digunakan bersama bahan input tersebut dalam resep-resep nyata.</li>
+              </ul>
+
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <label for="ingredient2" class="block text-gray-700 font-medium mb-1">Bahan 2</label>
-          <input type="text" name="bahan" placeholder="Masukkan bahan kedua" value="{{ request.form.getlist('bahan')[1] if request.form.getlist('bahan')|length > 1 else '' }}" class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
-        </div>
-        <div>
-          <label for="ingredient3" class="block text-gray-700 font-medium mb-1">Bahan 3</label>
-          <input type="text" name="bahan" placeholder="Masukkan bahan ketiga" value="{{ request.form.getlist('bahan')[2] if request.form.getlist('bahan')|length > 2 else '' }}" class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
-        </div>
-        <div>
-          <label for="country" class="block text-gray-700 font-medium mb-1">Pilih Negara</label>
-          <select id="country" name="negara" required class="w-full rounded-lg border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-purple-500">
-            <option value="" disabled selected>Pilih negara</option>
-            <option value="Indonesia">Indonesia</option>
-            <option value="Malaysia">Malaysia</option>
-            <option value="Thailand">Thailand</option>
-            <option value="Vietnam">Vietnam</option>
-            <option value="Laos">Laos</option>
-            <option value="Brunei Darussalam">Brunei Darussalam</option>
-            <option value="Kamboja">Kamboja</option>
-          </select>
-        </div>
-        <button type="submit" class="w-full bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-200 hover:to-lime-100 text-white font-semibold rounded-lg px-4 py-2 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300">Tampilkan</button>
-        </form>
       </div>
-    </div>
+    </section>
+
+    <section id="sistemrekomendasi">
+      <div class="card-sistem-rekomendasi">
+        <div class="row g-0 w-100">
+          <div class="col-md-4">
+            <img
+              src="{{ url_for('static', filename='img/makanan/gaeng-keow-wan.png') }}"
+              class="img-fluid rounded-start"
+              alt=""
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1 class="card-title">Sistem Rekomendasi Makanan</h1>
+              <form method="POST" class="w-100">
+            <div class="mb-3">
+              <label for="ingredient1" class="form-label fw-bold">Bahan 1</label>
+              <input type="text" class="form-control" name="bahan" placeholder="Masukkan Bahan Pertama" value="{{ request.form.getlist('bahan')[0] if request.form.getlist('bahan')|length > 0 else '' }}"/>
+            </div>
+            <div class="mb-3">
+              <label for="ingredient2" class="form-label fw-bold">Bahan 2</label>
+              <input type="text" class="form-control" name="bahan" placeholder="Masukkan Bahan Kedua" value="{{ request.form.getlist('bahan')[1] if request.form.getlist('bahan')|length > 1 else '' }}"/>
+            </div>
+            <div class="mb-3">
+              <label for="ingredient3" class="form-label fw-bold">Bahan 3</label>
+              <input type="text" class="form-control" name="bahan" placeholder="Masukkan Bahan Ketiga" value="{{ request.form.getlist('bahan')[2] if request.form.getlist('bahan')|length > 2 else '' }}"/>
+            </div>
+            <div class="mb-3">
+              <label for="negara" class="form-label fw-bold">Pilih Negara</label>
+              <select class="form-select" id="negara" name="negara">
+                <option value="" disabled selected>Pilih negara</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Laos">Laos</option>
+                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                <option value="Kamboja">Kamboja</option>
+                <option value="Timor Leste">Timor Leste</option>
+                <option value="Filipina">Filipina</option>
+                <option value="Singapura">Singapura</option>
+              </select>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn form-control border-0">Tampilkan</button>
+            </div>
+          </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {% if hasil %}
-    <div id="result" class="bg-white rounded-3xl shadow-lg p-6 w-fit">
-      {% if hasil.error %}
-        <p>{{ hasil.error }}</p>
-      {% else %}
-      <p class="font-semibold text-lg mb-2">Rekomendasi bahan tambahan:</p>
-      <ul class="list-disc list-inside mb-2">
-        {% for bahan in hasil.rekomendasi_bahan %}
-          <li>{{ bahan }}</li>
-        {% endfor %}
-      </ul>
-        <p class="mb-2">Resep: {{ hasil.nama_resep }} ({{ hasil.negara }})</p>
-        <h4 class="font-semibold text-lg mb-1">Bahan lengkap:</h4>
-        <ul class="list-disc list-inside">
-          {% for bahan in hasil.bahan_resep %}
-            <li>{{ bahan }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
+    <section id="rekomendasimakanan">
+      <div id="result" class="card-rekomendasi-makanan container">
+        <div class="row g-0">
+            <div>
+              {% if hasil.error %}
+                <p>{{ hasil.error }}</p>
+              {% else %}
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <h5 class="fw-semibold fs-5 mb-3">Rekomendasi bahan tambahan:</h5>
+                    <ul class="list-unstyled ps-3 mb-3">
+                      {% for bahan in hasil.rekomendasi_bahan %}
+                        <li class="mb-1">• {{ bahan }}</li>
+                      {% endfor %}
+                    </ul>
+                    <p class="mb-3">Resep: {{ hasil.nama_resep }} ({{ hasil.negara }})</p>
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center flex-column">
+                    <h5 class="fw-semibold fs-5 mb-2">Bahan lengkap:</h5>
+                    <ul class="list-unstyled ps-3">
+                      {% for bahan in hasil.bahan_resep %}
+                        <li class="mb-1">• {{ bahan }}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    <section id="makanan" class="py-5">
+      <div class="container container-makanan">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Indonesia.png') }}" class="img-bendera">
+              <h5 class="card-title">Nasi Goreng</h5>
+              <img src="{{ url_for('static', filename='img/makanan/nasi-goreng.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('nasi_goreng') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Malaysia.png') }}" class="img-bendera">
+              <h5 class="card-title">Nasi Lemak</h5>
+              <img src="{{ url_for('static', filename='img/makanan/nasi-lemak.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('nasi_lemak') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Thailand.png') }}" class="img-bendera">
+              <h5 class="card-title">Gaeng Keow Wan</h5>
+              <img src="{{ url_for('static', filename='img/makanan/gaeng-keow-wan.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('gaeng_keow_wan') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Vietnam.png') }}" class="img-bendera">
+              <h5 class="card-title">Pho</h5>
+              <img src="{{ url_for('static', filename='img/makanan/pho.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('pho') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Myanmar.png') }}" class="img-bendera">
+              <h5 class="card-title">Ohn No Khao Swe</h5>
+              <img src="{{ url_for('static', filename='img/makanan/ohn-no-khao-swe.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('ohn_no_khao_swe') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Laos.png') }}" class="img-bendera">
+              <h5 class="card-title">Larb</h5>
+              <img src="{{ url_for('static', filename='img/makanan/larb.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('larb') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Brunei.png') }}" class="img-bendera">
+              <h5 class="card-title">Ambuyat</h5>
+              <img src="{{ url_for('static', filename='img/makanan/ambuyat.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('ambuyat') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Kamboja.png') }}" class="img-bendera">
+              <h5 class="card-title">Lok Lak</h5>
+              <img src="{{ url_for('static', filename='img/makanan/lok-lak.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('lok_lak') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Timor.png') }}" class="img-bendera">
+              <h5 class="card-title">Carna Assada</h5>
+              <img src="{{ url_for('static', filename='img/makanan/carna-assada.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('carna_assada') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Filipina.png') }}" class="img-bendera">
+              <h5 class="card-title">Adobo</h5>
+              <img src="{{ url_for('static', filename='img/makanan/adobo.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('adobo') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card-makanan h-100 text-center">
+              <img src="{{ url_for('static', filename='img/bendera/Singapura.png') }}" class="img-bendera">
+              <h5 class="card-title">Hainanese Chicken Rice</h5>
+              <img src="{{ url_for('static', filename='img/makanan/hainanese-chicken-rice.png') }}" class="img-makanan">
+              <div class="card-body">
+                <a class="btn" href="{{ url_for('hainanese_chicken_rice') }}" role="button">Detail</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="up">
+      <a href="#back-to-top"
+        ><img src="{{ url_for('static', filename='img/up.png') }}" alt="back to top"
+      /></a>
     </div>
-  {% endif %}
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

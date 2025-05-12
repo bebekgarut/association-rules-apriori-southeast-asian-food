@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;&family=Agbalumo&family=Anton&family=Poppins&family=Vina+Sans&display=swap");
+* {
+  transition: 0.5s;
+}
+
+nav {
+  height: 80px;
+}
+
+.navbar-brand {
+  font-family: gabarito;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-family: gabarito;
+  font-size: 20px;
+}
+
+.dropdown-item {
+  font-family: gabarito;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.container-fluid {
+  z-index: 99;
+}

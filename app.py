@@ -53,5 +53,49 @@ def rekomendasi_dan_resep(bahan_input, negara):
     else:
         return {"error": "Tidak ada resep cocok ditemukan"}
 
+@app.route('/nasi-goreng')
+def nasi_goreng():
+    return render_template('detail/nasi-goreng.html')
+
+@app.route('/nasi-lemak')
+def nasi_lemak():
+    return render_template('detail/nasi-lemak.html')
+
+@app.route('/gaeng-keow-wan')
+def gaeng_keow_wan():
+    return render_template('detail/gaeng-keow-wan.html')
+
+@app.route('/pho')
+def pho():
+    return render_template('detail/pho.html')
+
+@app.route('/ohn-no-khao-swe')
+def ohn_no_khao_swe():
+    return render_template('detail/ohn-no-khao-swe.html')
+
+@app.route('/larb')
+def larb():
+    return render_template('detail/larb.html')
+
+@app.route('/ambuyat')
+def ambuyat():
+    return render_template('detail/ambuyat.html')
+
+@app.route('/lok-lak')
+def lok_lak():
+    return render_template('detail/lok-lak.html')
+
+@app.route('/carna-assada')
+def carna_assada():
+    return render_template('detail/carna-assada.html')
+
+@app.route('/adobo')
+def adobo():
+    return render_template('detail/adobo.html')
+
+@app.route('/hainanese-chicken-rice')
+def hainanese_chicken_rice():
+    return render_template('detail/hainanese-chicken-rice.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
