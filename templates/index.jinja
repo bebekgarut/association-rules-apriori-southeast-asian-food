@@ -120,7 +120,7 @@
               alt=""
             />
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 mb-5">
             <div class="card-body">
               <h1 class="card-title">Sistem Rekomendasi Makanan</h1>
               <form method="POST" class="w-100">
@@ -159,27 +159,23 @@
           </form>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    {% if hasil %}
-    <section id="rekomendasimakanan">
-      <div id="result" class="card-rekomendasi-makanan container">
+{% if hasil %}
         <div class="row g-0">
             <div>
               {% if hasil.error %}
-                <p>{{ hasil.error }}</p>
+                <p class="error mb-4">{{ hasil.error }}</p>
               {% else %}
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <h5 class="fw-semibold fs-5 mb-3">Rekomendasi bahan tambahan:</h5>
+                <div class="row card-rekomendasi-makanan">
+                    <p class="fw-semibold mb-3 title">Rekomendasi bahan tambahan dari Apriori:</p>
                     <ul class="list-unstyled ps-3 mb-3">
-                      {% for bahan in hasil.rekomendasi_bahan %}
+                         {% for bahan in hasil.rekomendasi_bahan %}
                         <li class="mb-1">• {{ bahan }}</li>
                       {% endfor %}
                     </ul>
+                    <div class="row">
+                  <div class="col-md-6 mb-4">
                     <p class="mb-3">Resep: {{ hasil.nama_resep }} ({{ hasil.negara }})</p>
+                    <img src="{{ url_for('static', filename=hasil.gambar) }}" alt="Gambar Masakan" class="">
                   </div>
                   <div class="col-md-6 d-flex align-items-center flex-column">
                     <h5 class="fw-semibold fs-5 mb-2">Bahan lengkap:</h5>
@@ -189,14 +185,19 @@
                       {% endfor %}
                     </ul>
                   </div>
+                  </div>
                 </div>
               {% endif %}
             </div>
         </div>
+    {% endif %}
+        </div>
       </div>
     </section>
-    {% endif %}
 
+  
+  
+    
     <section id="makanan" class="py-5">
       <div class="container container-makanan">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">

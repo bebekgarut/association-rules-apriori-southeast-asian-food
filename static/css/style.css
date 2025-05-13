@@ -40,12 +40,11 @@ section {
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 75vh;
   border-radius: 20px;
   background-color: #F1EFEC;
   color: #000000;
   box-shadow: 1px 1px 10px 0 #000000;
-  overflow-y: scroll;
+
 }
 
 .card-deskripsi img, .card-sistem-rekomendasi img {
@@ -53,19 +52,24 @@ section {
   filter: drop-shadow(2px 2px 6px #000000);
 }
 
+.error{
+  text-align: center;
+  font-size: larger;
+ }
+
 .card-rekomendasi-makanan {
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: 75vh;
-  border-radius: 20px;
-  background-color: #F1EFEC;
-  color: #000000;
-  box-shadow: 1px 1px 10px 0 #000000;
-  overflow-y: scroll;
+padding: 20px;
 }
+.card-rekomendasi-makanan .title {
+text-align: center;
+font-size: 35px;
+}
+
+.card-rekomendasi-makanan ul {
+text-align: center;
+
+}
+
 
 .card-makanan {
   display: flex;

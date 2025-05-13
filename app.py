@@ -9,6 +9,9 @@ with open('./model/aturan_per_negara.pkl', 'rb') as f:
 
 df = pd.read_csv('./dataset/resep_masakan.csv')
 df['bahan'] = df['bahan'].apply(lambda x: [b.strip() for b in x.split(',')])
+print(df.columns)
+
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -48,10 +51,12 @@ def rekomendasi_dan_resep(bahan_input, negara):
             "rekomendasi_bahan": tambahan,
             "nama_resep": top_resep['masakan'],
             "negara": top_resep['negara'],
-            "bahan_resep": top_resep['bahan']
+            "bahan_resep": top_resep['bahan'],
+            "gambar" : top_resep['gambar']
         }
     else:
         return {"error": "Tidak ada resep cocok ditemukan"}
+  
 
 @app.route('/nasi-goreng')
 def nasi_goreng():

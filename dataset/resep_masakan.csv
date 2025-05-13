@@ -1,5 +1,5 @@
-negara,masakan,bahan
-Indonesia,Nasi Goreng,"nasi, ayam, bawang merah, bawang putih, kecap manis, telur, minyak goreng, garam"
+negara,masakan,bahan,gambar
+Indonesia,Nasi Goreng,"nasi, ayam, bawang merah, bawang putih, kecap manis, telur, minyak goreng, garam",img/makanan/nasi-goreng.png
 Indonesia,Miee Aceh,"daging sapi, udang, kaldu, kol, tauge, mie aceh, bawang putih, bawang merah, tomat, daun bawang, seledri, cuka, kecap asin, cabai"
 Indonesia,Tahu Tempe Bacem,"tahu, tempe, asam, kecap manis, air kelapa parut, minyak goreng, bawang merah, bawang putih, ketumbar, gula merah, garam"
 Indonesia,Ayam Goreng,"ayam, merica, garam, jeruk nipis, asam, lengkuas, serai, minyak goreng, bawang merah, bawang putih, kunyit, jahe, kemiri, gula merah"
