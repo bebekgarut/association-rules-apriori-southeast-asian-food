@@ -1,111 +1,111 @@
-negara,masakan,bahan,gambar
-Indonesia,Nasi Goreng,"nasi, ayam, bawang merah, bawang putih, kecap manis, telur, minyak goreng, garam",img/makanan/nasi-goreng.png
-Indonesia,Miee Aceh,"daging sapi, udang, kaldu, kol, tauge, mie aceh, bawang putih, bawang merah, tomat, daun bawang, seledri, cuka, kecap asin, cabai"
-Indonesia,Tahu Tempe Bacem,"tahu, tempe, asam, kecap manis, air kelapa parut, minyak goreng, bawang merah, bawang putih, ketumbar, gula merah, garam"
-Indonesia,Ayam Goreng,"ayam, merica, garam, jeruk nipis, asam, lengkuas, serai, minyak goreng, bawang merah, bawang putih, kunyit, jahe, kemiri, gula merah"
-Indonesia,Soto Padang,"daging sapi, air, minyak goreng, serai, daun salam, daun bawang, daun jeruk, kapulaga, bunga lawang, cengkeh, bawang putih, lengkuas, jahe, kunyit, pala, ketumbar, merica, bihun, seledri, kecap manis, cuka, sambal"
-Indonesia,Mie Bangka,"mie basah, tauge, sawi hijau, daun bawang, kecap asin, kecap manis, minyak goreng, bawang, bawang merah, ayam, bawang putih, jahe, kaldu, lemon, saus sambal"
-Indonesia,Rawon,"daging sapi, air, daun jeruk, serai, daun bawang, asam, garam, gula, merica, kaldu bubuk, minyak goreng, bawang putih, kemiri, kunyit, keluak, bawang merah, telur asin, tauge, sambal, jeruk nipis"
-Indonesia,Soto Ayam Lamongan,"ayam, air, daun salam, daun jeruk, serai, lengkuas, daun bawang, garam, gula, penyedap rasa, bawang merah, bawang putih, kemiri, kunyit bakar, merica, telur, seledri, bubuk koya, tomat, kerupuk udang, bawang merah, mie soun, kol, sambal bawang, jeruk nipis"
-Indonesia,Bubur Manado,"beras, singkong, labu kuning, jagung, air, daun kunyit, daun bawang, kangkung, bayam, kemangi, bawang putih, bawang merah, serai, daun salam, garam, kaldu, ikan asin, sambal"
-Indonesia,Ayam Rica-Rica,"ayam, garam, jeruk nipis, minyak goreng, jahe, daun jeruk, serai, air, kemangi, cabai, bawang merah, bawang putih"
-Malaysia,Nasi Lemak,"beras, santan, jahe, pandan, sambal, bawang merah, bawang putih, cabai, lengkuas, pandan, garam, gula, ayam, ikan teri, kacang tanah, telur"
-Malaysia,Kwetiaw Penang,"mie lebar, udang, ayam, kerang dara, bakso ikan, tauge, daun bawang, telur,  kecap asin, kecap manis, minyak goreng"
-Malaysia,Chicken Curry,"ayam, bawang bombay, minyak goreng, jahe, bawang putih, cabai, garam, kecap asin, gula, kentang, cuka, air, bawang merah, cabai, kunyit, lengkuas, serai, biji mustard"
-Malaysia,Gulai Ikan Asin,"ikan asin, nanas, serai, daun jeruk purut, minyak goreng, santan, bawang merah, cabai, kunyit, lengkuas, ketumbar, terasi, garam"
-Malaysia,Miee Goreng Mualim,"Mie kuning, minyak goreng, bawang putih, cabai, kentang, tauge, kecap manis, kecap asin, saus tomat, gula, merica, garam"
-Malaysia,Roti Canai,"tepung terigu, air, garam, gula, minyak goreng"
-Malaysia,Karipap,"kulit pastry, kentang, daging sapi, bawang, rempah kari"
-Malaysia,Char Kway Teow,"kwetiau, telur, udang, kerang, tauge, bawang putih, kecap manis, minyak goreng, cabai"
-Malaysia,Laksa Penang,"mie soun, ayam, seafood, susu, santan, jeruk nipis, kaldu, garam, merica, gula, cabai, bawang merah, bawang putih, lengkuas, serai, udang, kunyit, ketumbar, jintan"
-Malaysia,Rujak Pasembur,"udang, cuMie-cuMie, tepung terigu, tepung beras, mentimun, tauge, baking powder, biji wijen, minyak goreng, tahu, kacang tanah"
-Thailand,Gaeng Keow Wan,"cabai, kemangi, bawang putih, bawang merah, lengkuas, ketumbar, terasi, ayam, santan, terong, daun jeruk, garam, gula, kemangi "
-Thailand,Pad Thai,"Mie pad Thai, tahu, tauge, kucai, bawang putih, bawang merah, udang, gula, garam, kecap ikan, asam, jeruk nipis, kacang tanah, cabai"
-Thailand,Montad Chuame,"singkong, gula, santan, pandan"
-Thailand,Khao Niaow Mamuang,"ketan, santan, gula, garam, mangga muda"
-Thailand,Tom Yum Goong,"kaldu udang, udang, jamur kancing, serai, lengkuas, daun jeruk, cabai, fish sauce, lemon, nam prik pao"
-Thailand,Gai Hor Bai Toey,"ayam, pandan, bawang putih, merica, kecap manis, saus tiram, kecap asin, minyak wijen"
-Thailand,Som Tum,"pepaya muda, wortel, kacang panjang, tomat, cabai, bawang putih, gula, lemon, kecap ikan, udang, kacang tanah"
-Thailand,Khao Pad,"nasi, ayam, telur, bawang putih, bawang bombay, tomat, cabai, daun bawang, kecap ikan, merica, garam, gula, jeruk nipis"
-Thailand,Sum Tom Mamuang,"mangga muda, cabai, bawang merah, gula, lemon, kacang tanah, daun ketumbar, udang"
-Thailand,Pad Krapow,"ayam, bawang bombay, bawang putih, cabai, saus tiram, kecap ikan, kaldu jamur, kecap manis, gula, garam, daun basil"
-Vietnam,Pho,"mie beras, daging sapi, kaldu, kayu manis, cengkeh, jahe, bawang, garam, gula"
-Vietnam,Banh Mie,"Baguette, pate, daging babi, wortel, mentimun, daun ketumbar, mayones, saus sambal, garam"
-Vietnam,Goi Cuon,"Kulit lumpia, udang, bihun, daun merica, Mient, saus hoisin, kacang tanah, gula, garam"
-Vietnam,Bun Cha,"Mie beras, daging babi, sayuran, saus ikan, bawang putih, cabai, gula, garam"
-Vietnam,Banh Xeo,"Tepung beras, kunyit, santan, udang, tauge, bawang putih, gula, garam"
-Vietnam,Cha Gio,"Kulit lumpia, daging sapi, jamur, wortel, bihun, bawang putih, garam, minyak goreng"
-Vietnam,Com Tam,"nasi, daging babi, telur, acar sayuran, saus ikan, gula, garam"
-Vietnam,Canh Chua,"Ikan, nanas, tomat, okra, bawang putih, daun ketumbar, asam, gula, garam"
-Vietnam,Banh Cuon,"Tepung beras, daging sapi, jamur kuping, bawang putih, garam, minyak goreng"
-Vietnam,Cao Lau,"Mie Cao Lau, daging babi, sayuran, kerupuk, kecap, gula, garam"
-Myanmar,Ohn No Khao Swe,"Mie telur, santan, ayam, bawang bombay, bawang putih, kunyit, bubuk kari, bubuk cabai, minyak goreng, telur, bawang merah, daun bawang"
-Myanmar,Laphet Thohk,"daun teh fermentasi, kubis, tomat, bawang merah, cabai, bawang putih, kacang tanah, kacang polong, udang"
-Myanmar,Mohinga,"tepung beras, kaldu ikan, ikan, bawang merah, bawang putih, serai, jahe, bihun, telur, daun ketumbar"
-Myanmar,Sanwin Makin,"tepung semolina, santan, gula kastor, telur, mentega, garam, kapulaga, biji wijen, kacang mete"
-Myanmar,Kyay Oh,"bihun, daging sapi, telur, pakcoy, bakso, daun bawang, bawang merah"
-Myanmar,Meeshay,"bihun, daging sapi, tauge, sayuran, bawang putih, kecap, kaldu, acar lobak"
-Myanmar,Nga HtaMien,"nasi, ikan, kunyit, bawang putih, minyak goreng, garam"
-Myanmar,Tahu Burma,"tepung buncis, air, garam, minyak goreng"
-Myanmar,Kari Burma,"daging sapig, santan, bawang merah, bawang putih, jahe, bubuk kari, cabai, tomat"
-Myanmar,Nasi kelapa parut Burma,"nasi, santan, bawang bombay, gula, garam, pandan"
-Laos,Larb,"daging sapi, bawang putih, lengkuas, cabai, daun bawang, kecap ikan, gula, terasi, kemangi, jeruk nipis, beras ketan"
-Laos,Mok Pa,"ikan, jahe, bawang putih, minyak goreng, kacang tanah, minyak wijen, wijen, kecap ikan, daun pisang"
-Laos,Khao Niao,"beras ketan, santan, garam"
-Laos,Tam Mak Hoong,"pepaya muda, jeruk nipis, cabai, udang, saus ikan, gula merah, kacang tanah"
-Laos,Khao Jee,"roti baguette, tomat, keju, daging ham, wortel, merica, saus bawang putih, cabai"
-Laos,Khao Piak Sen,"Mie beras, kaldu, bawang putih, bawang merah, daun bawang, ayam"
-Laos,Nam Khao Tod,"nasi, kelapa parut parut, sosis, kacang tanah, saus ikan fermentasi, jeruk nipis"
-Laos,Ping Kai,"ayam, lengkuas, bawang putih, cabai, garam, gula, minyak goreng"
-Laos,Kaipen,"rumput laut, bawang putih, wijen, minyak goreng"
-Laos,Sosis Tradisional,"daging sapi, rempah-rempah, kulit sosis alaMie"
-Brunei Darussalam,Ambuyat,"tepung sagu, kuah ikan kuning, opor ayam"
-Brunei Darussalam,Miee Goreng Brunei,"Mie telur, sambal, saus tiram, bawang putih, bawang merah"
-Brunei Darussalam,Belutak,"daging sapi, ketumbar, jintan, bawang putih"
-Brunei Darussalam,Nasi Katok,"nasi, ayam, sambal"
-Brunei Darussalam,Pulut Panggang,"beras ketan, santan, gula, garam, daun pisang, ikan"
-Brunei Darussalam,Soto Brunei,"kaldu, bawang merah, bawang putih, rempah soto, daging sapi"
-Brunei Darussalam,Hati Buyah,"paru-paru sapi, bumbu rempah, kecap manis"
-Brunei Darussalam,Kue Celurut,"tepung beras, gula merah, santan"
-Brunei Darussalam,Salad Udang,"udang, mangga muda, mentimun, merica, bawang merah, saus pedas"
-Brunei Darussalam,Katilapam,"tepung beras, daging sapi, kacang tanah, sayuran"
-Kamboja,Lok Lak,"daging sapi, kecap ikan, saus tiram, saus tomat, gula, bawang putih, bawang merah, merica, sayuran"
-Kamboja,Nom Banh Chok,"Mie beras, saus ikan, tauge, mentimun, sayuran, bunga pisang"
-Kamboja,Lap Khmer,"daging sapi, jeruk nipis, serai, bawang merah, bawang putih, kacang panjang, tauge, cabai, daun mint, kecap ikan, gula, garam"
-Kamboja,Samlor Machu Trey,"ikan, tamarin, ketumbar, serai, kemangi, bawang merah, daun bawang, jeruk purut, saus ikan"
-Kamboja,Nasi Goreng Sayur Kamboja,"nasi, sosis, bawang putih, bawang bombay, kacang polong, wortel, sawi putih, telur, kecap ikan, kecap asin, merica, sambal"
-Kamboja,Ngam Nguv,"ayam, lemon, daun bawang, bawang putih, kecap ikan, garam, gula"
-Kamboja,Samlor Kako,"labu, terong, kacang panjang, wortel, pisang hijau, saus ikan"
-Kamboja,Khor,"tahu, ikan, telur, paprika, gula merah, mangga muda"
-Kamboja,Kuy Teav,"Mie beras, minyak goreng, bawang putih, bawang merah, kaldu"
-Kamboja,CaMielan Manis,"tepung beras, gula merah, kelapa parut parut, garam"
-Timor Leste,Raba-raba,"sayuran, minyak goreng, garam, bawang merah, bawang putih"
-Timor Leste,Koto,"kacang merah, daging sapi, air, Garam"
-Timor Leste,Bebere,"daging sapi, bawang putih, cabai"
-Timor Leste,Budu Tasi,"rumput laut, cabai, bawang merah, daun bawang, cuka, garam, Minyak goreng"
-Timor Leste,Batar Daan,"jagung, kacang hijau, labu kuning, minyak zaitun, bawang merah"
-Timor Leste,Bininka,"tepung beras, gula, santan, dan telur"
-Timor Leste,Carna Assada,"daging kerbau, asam, gula merah, cabai"
-Timor Leste,Saboko,"ikan, bawang, cabai, dasam"
-Timor Leste,Caldeirada,"daging sapi, cabai, tomat, kentang, wortel"
-Timor Leste,Selada Timor Leste,"daun merica bokor, bawang bombay, tomat, saus vinaigrette"
-Filipina,Adobo,"ayam, kecap asin, cuka, bawang putih, daun salam, merica, gula, garam"
-Filipina,Sinigang,"Daging babi, tomat, asam, bayam, labu siam, cabai, bawang, garam"
-Filipina,Lechon,"daging babi, serai, daun salam, bawang putih, garam, minyak goreng"
-Filipina,Pancit,"Mie, ayam, wortel, kol, bawang putih, kecap, garam, minyak goreng"
-Filipina,Kare-Kare,"Ekor sapi, buncis, terong, saus kacang, bagoong, bawang putih, gula, garam"
-Filipina,Laing,"Daun talas, santan, udang, cabai, bawang putih, gula, garam"
-Filipina,Bicol Express,"Daging babi, santan, cabai, bawang putih, bagoong, garam"
-Filipina,Arroz Caldo,"Beras, ayam, jahe, bawang putih, kaldu, telur, garam"
-Filipina,Menudo,"Daging babi, hati, kentang, wortel, saus tomat, bawang putih, garam, gula"
-Filipina,Pesang Manok,"ayam, air, kaldu, jahe, kentang, kubis, saus ikan, merica, garam"
-Singapura,Hainanese Chicken Rice,"Ayam, nasi, kaldu, jahe, bawang putih, kecap asin, saus cabai, minyak wijen, garam"
-Singapura,Chili Crab,"Kepiting, saus tomat, cabai, telur, bawang putih, jahe, gula, garam, minyak goreng"
-Singapura,Laksa Singapura,"Mie beras, santan, udang, tahu, telur, daun ketumbar, bawang putih, cabai, garam, gula"
-Singapura,Char Siew Rice,"Daging babi, kecap manis, madu, bawang putih, nasi, garam, minyak goreng"
-Singapura,Mee Rebus,"Mie kuning, tauge, telur, kentang rebus, daun bawang, bawang merah, cabai, gula, garam"
-Singapura,Popiah,"Kulit lumpia, rebung, wortel, kentang, telur, bawang putih, gula, garam, saus hoisin"
-Singapura,Fish Head Curry,"ikan, santan, kari bubuk, tomat, okra, bawang merah, bawang putih, garam, gula"
-Singapura,Roti Prata,"Tepung terigu, telur, air, garam, minyak goreng"
-Singapura,Satay Singapura,"Daging sapi, kecap manis, bawang putih, kunyit, gula merah, garam, tusuk sate, saus kacang"
-Singapura,Mee Siam,"bihun, bawang merah, bawang putih, tuco, santan, udang, tauge, bawang bombay, garam"
+negara,masakan,bahan,gambar,gambarnegara
+Indonesia,Nasi Goreng,"nasi, ayam, bawang merah, bawang putih, kecap manis, telur, minyak goreng, garam",img/makanan/nasi-goreng.png,img/bendera/Indonesia.png
+Indonesia,Miee Aceh,"daging sapi, udang, kaldu, kol, tauge, mie aceh, bawang putih, bawang merah, tomat, daun bawang, seledri, cuka, kecap asin, cabai",,img/bendera/Indoneisia.png
+Indonesia,Tahu Tempe Bacem,"tahu, tempe, asam, kecap manis, air kelapa parut, minyak goreng, bawang merah, bawang putih, ketumbar, gula merah, garam",,img/bendera/Indoneisia.png
+Indonesia,Ayam Goreng,"ayam, merica, garam, jeruk nipis, asam, lengkuas, serai, minyak goreng, bawang merah, bawang putih, kunyit, jahe, kemiri, gula merah",,img/bendera/Indoneisia.png
+Indonesia,Soto Padang,"daging sapi, air, minyak goreng, serai, daun salam, daun bawang, daun jeruk, kapulaga, bunga lawang, cengkeh, bawang putih, lengkuas, jahe, kunyit, pala, ketumbar, merica, bihun, seledri, kecap manis, cuka, sambal",,img/bendera/Indoneisia.png
+Indonesia,Mie Bangka,"mie basah, tauge, sawi hijau, daun bawang, kecap asin, kecap manis, minyak goreng, bawang, bawang merah, ayam, bawang putih, jahe, kaldu, lemon, saus sambal",,img/bendera/Indoneisia.png
+Indonesia,Rawon,"daging sapi, air, daun jeruk, serai, daun bawang, asam, garam, gula, merica, kaldu bubuk, minyak goreng, bawang putih, kemiri, kunyit, keluak, bawang merah, telur asin, tauge, sambal, jeruk nipis",,img/bendera/Indoneisia.png
+Indonesia,Soto Ayam Lamongan,"ayam, air, daun salam, daun jeruk, serai, lengkuas, daun bawang, garam, gula, penyedap rasa, bawang merah, bawang putih, kemiri, kunyit bakar, merica, telur, seledri, bubuk koya, tomat, kerupuk udang, bawang merah, mie soun, kol, sambal bawang, jeruk nipis",,img/bendera/Indoneisia.png
+Indonesia,Bubur Manado,"beras, singkong, labu kuning, jagung, air, daun kunyit, daun bawang, kangkung, bayam, kemangi, bawang putih, bawang merah, serai, daun salam, garam, kaldu, ikan asin, sambal",,img/bendera/Indoneisia.png
+Indonesia,Ayam Rica-Rica,"ayam, garam, jeruk nipis, minyak goreng, jahe, daun jeruk, serai, air, kemangi, cabai, bawang merah, bawang putih",,img/bendera/Indoneisia.png
+Malaysia,Nasi Lemak,"beras, santan, jahe, pandan, sambal, bawang merah, bawang putih, cabai, lengkuas, pandan, garam, gula, ayam, ikan teri, kacang tanah, telur",img/makanan/nasi-lemak.png,img/bendera/Malaysia.png
+Malaysia,Kwetiaw Penang,"mie lebar, udang, ayam, kerang dara, bakso ikan, tauge, daun bawang, telur,  kecap asin, kecap manis, minyak goreng",,img/bendera/Malaysia.png
+Malaysia,Chicken Curry,"ayam, bawang bombay, minyak goreng, jahe, bawang putih, cabai, garam, kecap asin, gula, kentang, cuka, air, bawang merah, cabai, kunyit, lengkuas, serai, biji mustard",,img/bendera/Malaysia.png
+Malaysia,Gulai Ikan Asin,"ikan asin, nanas, serai, daun jeruk purut, minyak goreng, santan, bawang merah, cabai, kunyit, lengkuas, ketumbar, terasi, garam",,img/bendera/Malaysia.png
+Malaysia,Miee Goreng Mualim,"Mie kuning, minyak goreng, bawang putih, cabai, kentang, tauge, kecap manis, kecap asin, saus tomat, gula, merica, garam",,img/bendera/Malaysia.png
+Malaysia,Roti Canai,"tepung terigu, air, garam, gula, minyak goreng",,img/bendera/Malaysia.png
+Malaysia,Karipap,"kulit pastry, kentang, daging sapi, bawang, rempah kari",,img/bendera/Malaysia.png
+Malaysia,Char Kway Teow,"kwetiau, telur, udang, kerang, tauge, bawang putih, kecap manis, minyak goreng, cabai",,img/bendera/Malaysia.png
+Malaysia,Laksa Penang,"mie soun, ayam, seafood, susu, santan, jeruk nipis, kaldu, garam, merica, gula, cabai, bawang merah, bawang putih, lengkuas, serai, udang, kunyit, ketumbar, jintan",,img/bendera/Malaysia.png
+Malaysia,Rujak Pasembur,"udang, cuMie-cuMie, tepung terigu, tepung beras, mentimun, tauge, baking powder, biji wijen, minyak goreng, tahu, kacang tanah",,img/bendera/Malaysia.png
+Thailand,Gaeng Keow Wan,"cabai, kemangi, bawang putih, bawang merah, lengkuas, ketumbar, terasi, ayam, santan, terong, daun jeruk, garam, gula, kemangi ",img/makanan/gaeng-keow-wan.png,img/bendera/Thailand.png
+Thailand,Pad Thai,"Mie pad Thai, tahu, tauge, kucai, bawang putih, bawang merah, udang, gula, garam, kecap ikan, asam, jeruk nipis, kacang tanah, cabai",,img/bendera/Malaysia.png
+Thailand,Montad Chuame,"singkong, gula, santan, pandan",,img/bendera/Malaysia.png
+Thailand,Khao Niaow Mamuang,"ketan, santan, gula, garam, mangga muda",,img/bendera/Malaysia.png
+Thailand,Tom Yum Goong,"kaldu udang, udang, jamur kancing, serai, lengkuas, daun jeruk, cabai, fish sauce, lemon, nam prik pao",,img/bendera/Malaysia.png
+Thailand,Gai Hor Bai Toey,"ayam, pandan, bawang putih, merica, kecap manis, saus tiram, kecap asin, minyak wijen",,img/bendera/Malaysia.png
+Thailand,Som Tum,"pepaya muda, wortel, kacang panjang, tomat, cabai, bawang putih, gula, lemon, kecap ikan, udang, kacang tanah",,img/bendera/Malaysia.png
+Thailand,Khao Pad,"nasi, ayam, telur, bawang putih, bawang bombay, tomat, cabai, daun bawang, kecap ikan, merica, garam, gula, jeruk nipis",,img/bendera/Malaysia.png
+Thailand,Sum Tom Mamuang,"mangga muda, cabai, bawang merah, gula, lemon, kacang tanah, daun ketumbar, udang",,img/bendera/Malaysia.png
+Thailand,Pad Krapow,"ayam, bawang bombay, bawang putih, cabai, saus tiram, kecap ikan, kaldu jamur, kecap manis, gula, garam, daun basil",,img/bendera/Malaysia.png
+Vietnam,Pho,"mie beras, daging sapi, kaldu, kayu manis, cengkeh, jahe, bawang, garam, gula",img/makanan/pho.png,img/bendera/Vietnam.png
+Vietnam,Banh Mie,"Baguette, pate, daging babi, wortel, mentimun, daun ketumbar, mayones, saus sambal, garam",,img/bendera/Vietnam.png
+Vietnam,Goi Cuon,"Kulit lumpia, udang, bihun, daun merica, Mient, saus hoisin, kacang tanah, gula, garam",,img/bendera/Vietnam.png
+Vietnam,Bun Cha,"Mie beras, daging babi, sayuran, saus ikan, bawang putih, cabai, gula, garam",,img/bendera/Vietnam.png
+Vietnam,Banh Xeo,"Tepung beras, kunyit, santan, udang, tauge, bawang putih, gula, garam",,img/bendera/Vietnam.png
+Vietnam,Cha Gio,"Kulit lumpia, daging sapi, jamur, wortel, bihun, bawang putih, garam, minyak goreng",,img/bendera/Vietnam.png
+Vietnam,Com Tam,"nasi, daging babi, telur, acar sayuran, saus ikan, gula, garam",,img/bendera/Vietnam.png
+Vietnam,Canh Chua,"Ikan, nanas, tomat, okra, bawang putih, daun ketumbar, asam, gula, garam",,img/bendera/Vietnam.png
+Vietnam,Banh Cuon,"Tepung beras, daging sapi, jamur kuping, bawang putih, garam, minyak goreng",,img/bendera/Vietnam.png
+Vietnam,Cao Lau,"Mie Cao Lau, daging babi, sayuran, kerupuk, kecap, gula, garam",,img/bendera/Vietnam.png
+Myanmar,Ohn No Khao Swe,"Mie telur, santan, ayam, bawang bombay, bawang putih, kunyit, bubuk kari, bubuk cabai, minyak goreng, telur, bawang merah, daun bawang",img/makanan/ohn-no-khao-swe.png,img/bendera/Myanmar.png
+Myanmar,Laphet Thohk,"daun teh fermentasi, kubis, tomat, bawang merah, cabai, bawang putih, kacang tanah, kacang polong, udang",,img/bendera/Myanmar.png
+Myanmar,Mohinga,"tepung beras, kaldu ikan, ikan, bawang merah, bawang putih, serai, jahe, bihun, telur, daun ketumbar",,img/bendera/Myanmar.png
+Myanmar,Sanwin Makin,"tepung semolina, santan, gula kastor, telur, mentega, garam, kapulaga, biji wijen, kacang mete",,img/bendera/Myanmar.png
+Myanmar,Kyay Oh,"bihun, daging sapi, telur, pakcoy, bakso, daun bawang, bawang merah",,img/bendera/Myanmar.png
+Myanmar,Meeshay,"bihun, daging sapi, tauge, sayuran, bawang putih, kecap, kaldu, acar lobak",,img/bendera/Myanmar.png
+Myanmar,Nga HtaMien,"nasi, ikan, kunyit, bawang putih, minyak goreng, garam",,img/bendera/Myanmar.png
+Myanmar,Tahu Burma,"tepung buncis, air, garam, minyak goreng",,img/bendera/Myanmar.png
+Myanmar,Kari Burma,"daging sapig, santan, bawang merah, bawang putih, jahe, bubuk kari, cabai, tomat",,img/bendera/Myanmar.png
+Myanmar,Nasi kelapa parut Burma,"nasi, santan, bawang bombay, gula, garam, pandan",,img/bendera/Myanmar.png
+Laos,Larb,"daging sapi, bawang putih, lengkuas, cabai, daun bawang, kecap ikan, gula, terasi, kemangi, jeruk nipis, beras ketan",img/makanan/larb.png,img/bendera/Laos.png
+Laos,Mok Pa,"ikan, jahe, bawang putih, minyak goreng, kacang tanah, minyak wijen, wijen, kecap ikan, daun pisang",,img/bendera/Laos.png
+Laos,Khao Niao,"beras ketan, santan, garam",,img/bendera/Laos.png
+Laos,Tam Mak Hoong,"pepaya muda, jeruk nipis, cabai, udang, saus ikan, gula merah, kacang tanah",,img/bendera/Laos.png
+Laos,Khao Jee,"roti baguette, tomat, keju, daging ham, wortel, merica, saus bawang putih, cabai",,img/bendera/Laos.png
+Laos,Khao Piak Sen,"Mie beras, kaldu, bawang putih, bawang merah, daun bawang, ayam",,img/bendera/Laos.png
+Laos,Nam Khao Tod,"nasi, kelapa parut parut, sosis, kacang tanah, saus ikan fermentasi, jeruk nipis",,img/bendera/Laos.png
+Laos,Ping Kai,"ayam, lengkuas, bawang putih, cabai, garam, gula, minyak goreng",,img/bendera/Laos.png
+Laos,Kaipen,"rumput laut, bawang putih, wijen, minyak goreng",,img/bendera/Laos.png
+Laos,Sosis Tradisional,"daging sapi, rempah-rempah, kulit sosis alaMie",,img/bendera/Laos.png
+Brunei Darussalam,Ambuyat,"tepung sagu, kuah ikan kuning, opor ayam",img/makanan/ambuyat.png,img/bendera/Brunei.png
+Brunei Darussalam,Miee Goreng Brunei,"Mie telur, sambal, saus tiram, bawang putih, bawang merah",,img/bendera/Brunei.png
+Brunei Darussalam,Belutak,"daging sapi, ketumbar, jintan, bawang putih",,img/bendera/Brunei.png
+Brunei Darussalam,Nasi Katok,"nasi, ayam, sambal",,img/bendera/Brunei.png
+Brunei Darussalam,Pulut Panggang,"beras ketan, santan, gula, garam, daun pisang, ikan",,img/bendera/Brunei.png
+Brunei Darussalam,Soto Brunei,"kaldu, bawang merah, bawang putih, rempah soto, daging sapi",,img/bendera/Brunei.png
+Brunei Darussalam,Hati Buyah,"paru-paru sapi, bumbu rempah, kecap manis",,img/bendera/Brunei.png
+Brunei Darussalam,Kue Celurut,"tepung beras, gula merah, santan",,img/bendera/Brunei.png
+Brunei Darussalam,Salad Udang,"udang, mangga muda, mentimun, merica, bawang merah, saus pedas",,img/bendera/Brunei.png
+Brunei Darussalam,Katilapam,"tepung beras, daging sapi, kacang tanah, sayuran",,img/bendera/Brunei.png
+Kamboja,Lok Lak,"daging sapi, kecap ikan, saus tiram, saus tomat, gula, bawang putih, bawang merah, merica, sayuran",img/makanan/lok-lak.png,img/bendera/Kamboja.png
+Kamboja,Nom Banh Chok,"Mie beras, saus ikan, tauge, mentimun, sayuran, bunga pisang",,img/bendera/Kamboja.png
+Kamboja,Lap Khmer,"daging sapi, jeruk nipis, serai, bawang merah, bawang putih, kacang panjang, tauge, cabai, daun mint, kecap ikan, gula, garam",,img/bendera/Kamboja.png
+Kamboja,Samlor Machu Trey,"ikan, tamarin, ketumbar, serai, kemangi, bawang merah, daun bawang, jeruk purut, saus ikan",,img/bendera/Kamboja.png
+Kamboja,Nasi Goreng Sayur Kamboja,"nasi, sosis, bawang putih, bawang bombay, kacang polong, wortel, sawi putih, telur, kecap ikan, kecap asin, merica, sambal",,img/bendera/Kamboja.png
+Kamboja,Ngam Nguv,"ayam, lemon, daun bawang, bawang putih, kecap ikan, garam, gula",,img/bendera/Kamboja.png
+Kamboja,Samlor Kako,"labu, terong, kacang panjang, wortel, pisang hijau, saus ikan",,img/bendera/Kamboja.png
+Kamboja,Khor,"tahu, ikan, telur, paprika, gula merah, mangga muda",,img/bendera/Kamboja.png
+Kamboja,Kuy Teav,"Mie beras, minyak goreng, bawang putih, bawang merah, kaldu",,img/bendera/Kamboja.png
+Kamboja,CaMielan Manis,"tepung beras, gula merah, kelapa parut parut, garam",,img/bendera/Kamboja.png
+Timor Leste,Raba-raba,"sayuran, minyak goreng, garam, bawang merah, bawang putih",,img/bendera/Timor.png
+Timor Leste,Koto,"kacang merah, daging sapi, air, Garam",,img/bendera/Timor.png
+Timor Leste,Bebere,"daging sapi, bawang putih, cabai",,img/bendera/Timor.png
+Timor Leste,Budu Tasi,"rumput laut, cabai, bawang merah, daun bawang, cuka, garam, Minyak goreng",,img/bendera/Timor.png
+Timor Leste,Batar Daan,"jagung, kacang hijau, labu kuning, minyak zaitun, bawang merah",,img/bendera/Timor.png
+Timor Leste,Bininka,"tepung beras, gula, santan, dan telur",,img/bendera/Timor.png
+Timor Leste,Carna Assada,"daging kerbau, asam, gula merah, cabai",img/makanan/carna-assada.png,img/bendera/Timor.png
+Timor Leste,Saboko,"ikan, bawang, cabai, dasam",,img/bendera/Timor.png
+Timor Leste,Caldeirada,"daging sapi, cabai, tomat, kentang, wortel",,img/bendera/Timor.png
+Timor Leste,Selada Timor Leste,"daun merica bokor, bawang bombay, tomat, saus vinaigrette",,img/bendera/Timor.png
+Filipina,Adobo,"ayam, kecap asin, cuka, bawang putih, daun salam, merica, gula, garam",img/makanan/adobo.png,img/bendera/Filipina.png
+Filipina,Sinigang,"Daging babi, tomat, asam, bayam, labu siam, cabai, bawang, garam",,img/bendera/Filipina.png
+Filipina,Lechon,"daging babi, serai, daun salam, bawang putih, garam, minyak goreng",,img/bendera/Filipina.png
+Filipina,Pancit,"Mie, ayam, wortel, kol, bawang putih, kecap, garam, minyak goreng",,img/bendera/Filipina.png
+Filipina,Kare-Kare,"Ekor sapi, buncis, terong, saus kacang, bagoong, bawang putih, gula, garam",,img/bendera/Filipina.png
+Filipina,Laing,"Daun talas, santan, udang, cabai, bawang putih, gula, garam",,img/bendera/Filipina.png
+Filipina,Bicol Express,"Daging babi, santan, cabai, bawang putih, bagoong, garam",,img/bendera/Filipina.png
+Filipina,Arroz Caldo,"Beras, ayam, jahe, bawang putih, kaldu, telur, garam",,img/bendera/Filipina.png
+Filipina,Menudo,"Daging babi, hati, kentang, wortel, saus tomat, bawang putih, garam, gula",,img/bendera/Filipina.png
+Filipina,Pesang Manok,"ayam, air, kaldu, jahe, kentang, kubis, saus ikan, merica, garam",,img/bendera/Filipina.png
+Singapura,Hainanese Chicken Rice,"Ayam, nasi, kaldu, jahe, bawang putih, kecap asin, saus cabai, minyak wijen, garam",img/makanan/hainanese-chicken-rice.png,img/bendera/Singapura.png
+Singapura,Chili Crab,"Kepiting, saus tomat, cabai, telur, bawang putih, jahe, gula, garam, minyak goreng",,img/bendera/Singapura.png
+Singapura,Laksa Singapura,"Mie beras, santan, udang, tahu, telur, daun ketumbar, bawang putih, cabai, garam, gula",,img/bendera/Singapura.png
+Singapura,Char Siew Rice,"Daging babi, kecap manis, madu, bawang putih, nasi, garam, minyak goreng",,img/bendera/Singapura.png
+Singapura,Mee Rebus,"Mie kuning, tauge, telur, kentang rebus, daun bawang, bawang merah, cabai, gula, garam",,img/bendera/Singapura.png
+Singapura,Popiah,"Kulit lumpia, rebung, wortel, kentang, telur, bawang putih, gula, garam, saus hoisin",,img/bendera/Singapura.png
+Singapura,Fish Head Curry,"ikan, santan, kari bubuk, tomat, okra, bawang merah, bawang putih, garam, gula",,img/bendera/Singapura.png
+Singapura,Roti Prata,"Tepung terigu, telur, air, garam, minyak goreng",,img/bendera/Singapura.png
+Singapura,Satay Singapura,"Daging sapi, kecap manis, bawang putih, kunyit, gula merah, garam, tusuk sate, saus kacang",,img/bendera/Singapura.png
+Singapura,Mee Siam,"bihun, bawang merah, bawang putih, tuco, santan, udang, tauge, bawang bombay, garam",,img/bendera/Singapura.png

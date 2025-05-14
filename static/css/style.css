@@ -33,6 +33,11 @@ section {
   align-items: center;
 }
 
+.imgsec1 img{
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 10%;
+}
+
 
 .card-deskripsi, .card-sistem-rekomendasi {
   margin-top: 80px;
@@ -58,16 +63,44 @@ section {
  }
 
 .card-rekomendasi-makanan {
-padding: 20px;
+padding: 20px 100px ;
 }
 .card-rekomendasi-makanan .title {
 text-align: center;
-font-size: 35px;
+font-size: 34px;
 }
 
-.card-rekomendasi-makanan ul {
+.card-rekomendasi-makanan .daftar-rekomendasi {
 text-align: center;
+font-size: 21px;
+}
 
+.card-rekomendasi-makanan .gambar-dan-nama {
+display: flex;
+flex-direction: column; 
+align-items: center;
+justify-content: center;
+font-size: 25px;
+font-weight: bold;
+}
+
+.card-rekomendasi-makanan .gambar-dan-nama img {
+width: 600px ;
+}
+
+.card-rekomendasi-makanan .bahan-lengkap p {
+font-size: 22px;
+}
+
+.card-rekomendasi-makanan .bahan-lengkap ul {
+font-size: 18px;
+}
+
+.form-apriori{
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -100,17 +133,14 @@ text-align: center;
 }
 
 .card-detail-makanan {
-  padding: 50px 0px;
-  margin-top: 80px;
+  padding: 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
   border-radius: 20px;
   background-color: #F1EFEC;
   color: #000000;
   box-shadow: 1px 1px 10px 0 #000000;
-  overflow-y: scroll;
 }
 
 .card-detail-makanan img {
@@ -167,4 +197,16 @@ text-align: center;
   width: 90px;
   background-color: #123458;
   border-radius: 20px;
+}
+
+.btn-modal-close{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.modal-title{
+  position: absolute;
+  top: 20px;
+  left: 15px;
 }

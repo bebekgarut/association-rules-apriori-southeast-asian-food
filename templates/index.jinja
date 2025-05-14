@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sistem Rekomendasi Makanan</title>
+    <title>Sistem Rekomendasi Bahan Masakan</title>
     <link
       rel="shortcut icon"
       href=""
@@ -27,7 +27,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#"> Rekomendasi Bahan Makanan </a>
+        <a class="navbar-brand text-white" href="#"> Rekomendasi Bahan Masakan </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -64,16 +64,16 @@
     <section id="deskripsi">
       <div class="card-deskripsi">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-4 imgsec1">
             <img
-              src="{{ url_for('static', filename='img/makanan/nasi-goreng.png') }}"
+              src="{{ url_for('static', filename='img/sec1.png') }}"
               class="img-fluid rounded-start"
               alt=""
             />
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h1 class="card-title">Sistem Rekomendasi Makanan</h1>
+              <h1 class="card-title">Sistem Rekomendasi Bahan Masakan</h1>
               <p class="card-text">
                 Sistem rekomendasi ini dirancang untuk membantu pengguna yang
                 memiliki sejumlah bahan masakan tertentu, namun belum tahu bahan
@@ -102,7 +102,6 @@
                 </ol>
                 <li>Output: Rekomendasi bahan-bahan lain yang sering digunakan bersama bahan input tersebut dalam resep-resep nyata.</li>
               </ul>
-
               </p>
             </div>
           </div>
@@ -115,18 +114,18 @@
         <div class="row g-0 w-100">
           <div class="col-md-4">
             <img
-              src="{{ url_for('static', filename='img/makanan/gaeng-keow-wan.png') }}"
+              src="{{ url_for('static', filename='img/sec2.jpg') }}"
               class="img-fluid rounded-start"
               alt=""
             />
           </div>
           <div class="col-md-8 mb-5">
             <div class="card-body">
-              <h1 class="card-title">Sistem Rekomendasi Makanan</h1>
+              <h1 class="card-title">Masukan bahan makanan yang dimilki</h1>
               <form method="POST" class="w-100">
             <div class="mb-3">
               <label for="ingredient1" class="form-label fw-bold">Bahan 1</label>
-              <input type="text" class="form-control" name="bahan" placeholder="Masukkan Bahan Pertama" value="{{ request.form.getlist('bahan')[0] if request.form.getlist('bahan')|length > 0 else '' }}"/>
+              <input type="text" class="form-control" name="bahan" placeholder="Masukkan Bahan Pertama" value="{{ request.form.getlist('bahan')[0] if request.form.getlist('bahan')|length > 0 else '' }}" required/>
             </div>
             <div class="mb-3">
               <label for="ingredient2" class="form-label fw-bold">Bahan 2</label>
@@ -138,7 +137,7 @@
             </div>
             <div class="mb-3">
               <label for="negara" class="form-label fw-bold">Pilih Negara</label>
-              <select class="form-select" id="negara" name="negara">
+              <select class="form-select" id="negara" name="negara" required>
                 <option value="" disabled selected>Pilih negara</option>
                 <option value="Indonesia">Indonesia</option>
                 <option value="Malaysia">Malaysia</option>
@@ -166,19 +165,19 @@
                 <p class="error mb-4">{{ hasil.error }}</p>
               {% else %}
                 <div class="row card-rekomendasi-makanan">
-                    <p class="fw-semibold mb-3 title">Rekomendasi bahan tambahan dari Apriori:</p>
-                    <ul class="list-unstyled ps-3 mb-3">
+                    <p class="fw-semibold mb-1 title">Rekomendasi bahan tambahan dari Apriori:</p>
+                    <ul class="list-unstyled ps-3 mb-3 daftar-rekomendasi">
                          {% for bahan in hasil.rekomendasi_bahan %}
                         <li class="mb-1">• {{ bahan }}</li>
                       {% endfor %}
                     </ul>
                     <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <p class="mb-3">Resep: {{ hasil.nama_resep }} ({{ hasil.negara }})</p>
+                  <div class="col mb-2 gambar-dan-nama">
                     <img src="{{ url_for('static', filename=hasil.gambar) }}" alt="Gambar Masakan" class="">
+                    <p class="mb-3">Resep: {{ hasil.nama_resep }} ({{ hasil.negara }})</p>
                   </div>
-                  <div class="col-md-6 d-flex align-items-center flex-column">
-                    <h5 class="fw-semibold fs-5 mb-2">Bahan lengkap:</h5>
+                  <div class="col d-flex align-items-center justify-content-center flex-column bahan-lengkap">
+                    <p class="fw-semibold mb-1">Bahan-bahan lengkap:</p>
                     <ul class="list-unstyled ps-3">
                       {% for bahan in hasil.bahan_resep %}
                         <li class="mb-1">• {{ bahan }}</li>
@@ -194,146 +193,65 @@
         </div>
       </div>
     </section>
-
-  
-  
     
     <section id="makanan" class="py-5">
       <div class="container container-makanan">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-
+    {% for item in data %}
           <div class="col">
             <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Indonesia.png') }}" class="img-bendera">
-              <h5 class="card-title">Nasi Goreng</h5>
-              <img src="{{ url_for('static', filename='img/makanan/nasi-goreng.png') }}" class="img-makanan">
+              <img src="{{ url_for('static', filename=item.gambarnegara) }}" class="img-bendera">
+              <h5 class="card-title">{{item.masakan}}</h5>
+                   <div class="h-50 d-flex align-items-center justify-content-center">
+              <img src="{{ url_for('static', filename=item.gambar) }}" class="img-makanan">
+                  </div>
               <div class="card-body">
-                <a class="btn" href="{{ url_for('nasi_goreng') }}" role="button">Detail</a>
+             <button 
+          type="button" 
+          class="btn btn-primary" 
+          data-bs-toggle="modal" 
+          data-bs-target="#modalBahan{{ loop.index }}">
+          Lihat Bahan
+        </button>
               </div>
             </div>
           </div>
-
+      <div class="modal fade" id="modalBahan{{ loop.index }}" tabindex="-1" aria-labelledby="modalBahanLabel{{ loop.index }}" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content card-detail-makanan">
+      <div class="modal-header d-flex justify-content-between">
+        <h5 class="modal-title" id="modalBahanLabel{{ loop.index }}"> {{ item.masakan }} ({{ item.negara }})</h5>
+        <button type="button" class="btn-close btn-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-5">
+          <div class="col d-flex align-items-center justify-content-center">
+            <img
+              src="{{ url_for('static', filename=item.gambar) }}"
+              class="img-fluid rounded-start"
+              alt="Gambar {{ item.masakan }}"
+            />
+          </div>
           <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Malaysia.png') }}" class="img-bendera">
-              <h5 class="card-title">Nasi Lemak</h5>
-              <img src="{{ url_for('static', filename='img/makanan/nasi-lemak.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('nasi_lemak') }}" role="button">Detail</a>
-              </div>
+            <div class="card-body">
+              <p class="card-text mb-2"><strong>Bahan-bahan:</strong></p>
+              <ul class="ps-3">
+             {% for bahan in item.bahan %}
+  <li>{{ bahan }}</li>
+{% endfor %}
+              </ul>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Thailand.png') }}" class="img-bendera">
-              <h5 class="card-title">Gaeng Keow Wan</h5>
-              <img src="{{ url_for('static', filename='img/makanan/gaeng-keow-wan.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('gaeng_keow_wan') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Vietnam.png') }}" class="img-bendera">
-              <h5 class="card-title">Pho</h5>
-              <img src="{{ url_for('static', filename='img/makanan/pho.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('pho') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Myanmar.png') }}" class="img-bendera">
-              <h5 class="card-title">Ohn No Khao Swe</h5>
-              <img src="{{ url_for('static', filename='img/makanan/ohn-no-khao-swe.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('ohn_no_khao_swe') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Laos.png') }}" class="img-bendera">
-              <h5 class="card-title">Larb</h5>
-              <img src="{{ url_for('static', filename='img/makanan/larb.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('larb') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Brunei.png') }}" class="img-bendera">
-              <h5 class="card-title">Ambuyat</h5>
-              <img src="{{ url_for('static', filename='img/makanan/ambuyat.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('ambuyat') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Kamboja.png') }}" class="img-bendera">
-              <h5 class="card-title">Lok Lak</h5>
-              <img src="{{ url_for('static', filename='img/makanan/lok-lak.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('lok_lak') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Timor.png') }}" class="img-bendera">
-              <h5 class="card-title">Carna Assada</h5>
-              <img src="{{ url_for('static', filename='img/makanan/carna-assada.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('carna_assada') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Filipina.png') }}" class="img-bendera">
-              <h5 class="card-title">Adobo</h5>
-              <img src="{{ url_for('static', filename='img/makanan/adobo.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('adobo') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card-makanan h-100 text-center">
-              <img src="{{ url_for('static', filename='img/bendera/Singapura.png') }}" class="img-bendera">
-              <h5 class="card-title">Hainanese Chicken Rice</h5>
-              <img src="{{ url_for('static', filename='img/makanan/hainanese-chicken-rice.png') }}" class="img-makanan">
-              <div class="card-body">
-                <a class="btn" href="{{ url_for('hainanese_chicken_rice') }}" role="button">Detail</a>
-              </div>
-            </div>
-          </div>
-
+         {% endfor %}
         </div>
       </div>
     </section>
-
-
-    <div class="up">
-      <a href="#back-to-top"
-        ><img src="{{ url_for('static', filename='img/up.png') }}" alt="back to top"
-      /></a>
-    </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
