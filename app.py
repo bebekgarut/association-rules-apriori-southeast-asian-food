@@ -26,12 +26,14 @@ def rekomendasi_dan_resep(bahan_input, negara):
         return {"error": "Negara tidak ditemukan"}
 
     rules_df = aturan_per_negara[negara]
-    bahan_input_set = set(bahan_input)
-    print(bahan_input_set)
+    bahan_input_set = set(filter(None, bahan_input))
+
+    print(f"bahan_input_set = {bahan_input_set}")
     cocok_rules = []
 
     for _, row in rules_df.iterrows():
-        if row['antecedents'].issubset(bahan_input_set) and not row['consequents'].issubset(bahan_input_set):
+        if row['antecedents'].issubset(bahan_input_set) \
+            and len(row['antecedents']) == len(bahan_input_set) and not row['consequents'].issubset(bahan_input_set):
             print(f"Cocok: {row['antecedents']} => {row['consequents']} | confidence: {row['confidence']}")
             cocok_rules.append(row)
 
@@ -39,7 +41,8 @@ def rekomendasi_dan_resep(bahan_input, negara):
         return {"error": "Tidak ada rekomendasi ditemukan"}
 
     top_rule = sorted(cocok_rules, key=lambda x:  (x['confidence'], len(x['consequents'])), reverse=True)[0]
-    tambahan = list(top_rule['consequents'])
+    print(f"ini top rule {top_rule}")
+    tambahan = list(set(top_rule['consequents'])- bahan_input_set)
     rekomendasi_set = bahan_input_set.union(tambahan)
 
     df_negara = df[df['negara'] == negara].copy()
