@@ -121,7 +121,7 @@
           </div>
           <div class="col-md-8 mb-5">
             <div class="card-body">
-              <h1 class="card-title">Masukan bahan makanan yang dimilki</h1>
+              <h1 class="card-title">Masukan bahan masakan yang dimilki</h1>
               <form method="POST" class="w-100">
             <div class="mb-3">
               <label for="ingredient1" class="form-label fw-bold">Bahan 1</label>
@@ -139,17 +139,17 @@
               <label for="negara" class="form-label fw-bold">Pilih Negara</label>
               <select class="form-select" id="negara" name="negara" required>
                 <option value="" disabled selected>Pilih negara</option>
-                <option value="Indonesia">Indonesia</option>
-                <option value="Malaysia">Malaysia</option>
-                <option value="Thailand">Thailand</option>
-                <option value="Vietnam">Vietnam</option>
-                <option value="Myanmar">Myanmar</option>
-                <option value="Laos">Laos</option>
-                <option value="Brunei Darussalam">Brunei Darussalam</option>
-                <option value="Kamboja">Kamboja</option>
-                <option value="Timor Leste">Timor Leste</option>
-                <option value="Filipina">Filipina</option>
-                <option value="Singapura">Singapura</option>
+                <option value="Indonesia" {% if request.form.get('negara') == 'Indonesia' %}selected{% endif %}>Indonesia</option>
+                <option value="Malaysia" {% if request.form.get('negara') == 'Malaysia' %}selected{% endif %}>Malaysia</option>
+                <option value="Thailand" {% if request.form.get('negara') == 'Thailand' %}selected{% endif %}>Thailand</option>
+                <option value="Vietnam" {% if request.form.get('negara') == 'Vietnam' %}selected{% endif %}>Vietnam</option>
+                <option value="Myanmar" {% if request.form.get('negara') == 'Myanmar' %}selected{% endif %}>Myanmar</option>
+                <option value="Laos" {% if request.form.get('negara') == 'Laos' %}selected{% endif %}>Laos</option>
+                <option value="Brunei Darussalam" {% if request.form.get('negara') == 'Brunei Darussalam' %}selected{% endif %}>Brunei Darussalam</option>
+                <option value="Kamboja" {% if request.form.get('negara') == 'Kamboja' %}selected{% endif %}>Kamboja</option>
+                <option value="Timor Leste" {% if request.form.get('negara') == 'Timor Leste' %}selected{% endif %}>Timor Leste</option>
+                <option value="Filipina" {% if request.form.get('negara') == 'Filipina' %}selected{% endif %}>Filipina</option>
+                <option value="Singapura" {% if request.form.get('negara') == 'Singapura' %}selected{% endif %}>Singapura</option>
               </select>
             </div>
             <div class="text-center">
@@ -171,20 +171,22 @@
                         <li class="mb-1">• {{ bahan }}</li>
                       {% endfor %}
                     </ul>
-                    <div class="row">
+                    {% for resep in hasil.resep_teratas %}
+                    <div class="row"> 
                   <div class="col mb-2 gambar-dan-nama">
-                    <img src="{{ url_for('static', filename=hasil.gambar) }}" alt="Gambar Masakan" class="">
-                    <p class="mb-3">Resep: {{ hasil.nama_resep }} ({{ hasil.negara }})</p>
+                    <img src="{{ url_for('static', filename=resep.gambar) }}" alt="Gambar Masakan" class="">
+                    <p class="mb-3">Resep: {{ resep.nama_resep }} ({{ resep.negara }})</p>
                   </div>
                   <div class="col d-flex align-items-center justify-content-center flex-column bahan-lengkap">
                     <p class="fw-semibold mb-1">Bahan-bahan lengkap:</p>
                     <ul class="list-unstyled ps-3">
-                      {% for bahan in hasil.bahan_resep %}
+                      {% for bahan in resep.bahan_resep %}
                         <li class="mb-1">• {{ bahan }}</li>
                       {% endfor %}
                     </ul>
                   </div>
                   </div>
+                  {% endfor %}
                 </div>
               {% endif %}
             </div>
@@ -196,6 +198,7 @@
     
     <section id="makanan" class="py-5">
       <div class="container container-makanan">
+          <h1 class="text-center mb-3">Daftar Makanan</h1>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
     {% for item in data %}
           <div class="col">

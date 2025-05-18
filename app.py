@@ -50,13 +50,17 @@ def rekomendasi_dan_resep(bahan_input, negara):
     df_cocok = df_negara[df_negara['jumlah_cocok'] > 0].sort_values(by='jumlah_cocok', ascending=False)
 
     if not df_cocok.empty:
-        top_resep = df_cocok.iloc[0]
+        top_resep_list = df_cocok.head(3).to_dict(orient='records')
         return {
             "rekomendasi_bahan": tambahan,
-            "nama_resep": top_resep['masakan'],
-            "negara": top_resep['negara'],
-            "bahan_resep": top_resep['bahan'],
-            "gambar" : top_resep['gambar']
+            "resep_teratas": [
+                {
+                    "nama_resep": r['masakan'],
+                    "negara": r['negara'],
+                    "bahan_resep": r['bahan'],
+                    "gambar": r['gambar']
+                } for r in top_resep_list
+            ]
         }
     else:
         return {"error": "Tidak ada resep cocok ditemukan"}
