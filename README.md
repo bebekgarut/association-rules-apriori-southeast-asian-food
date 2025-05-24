@@ -27,7 +27,8 @@ This application recommends additives and recipes based on the ingredients that 
    ![picture 1](static/img/screenshort/1.png)
 
 2. Select a country, for example `Indonesia`
-   (static/img/screenshort/2.png)
+   
+   ![picture 2]((static/img/screenshort/2.png)
 
 3. Click 'Tampilkan' to see additional ingredient recommendations and related recipes.
    (static/img/screenshort/3.png)
