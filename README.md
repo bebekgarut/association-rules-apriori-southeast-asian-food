@@ -21,10 +21,10 @@ This application recommends additives and recipes based on the ingredients that 
    python app.py
    ```
 
-## How to Use
+## Example Usage
 
 1. Add cooking ingredients such as `ayam` and `garam`.
-   (static/img/screenshort/1.png)
+   ![picture 1](static/img/screenshort/1.png)
 
 2. Select a country, for example `Indonesia`
    (static/img/screenshort/2.png)
