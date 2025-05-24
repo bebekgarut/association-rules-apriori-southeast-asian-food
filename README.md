@@ -24,6 +24,7 @@ This application recommends additives and recipes based on the ingredients that 
 ## Example Usage
 
 1. Add cooking ingredients such as `ayam` and `garam`.
+   
    ![picture 1](static/img/screenshort/1.png)
 
 2. Select a country, for example `Indonesia`
